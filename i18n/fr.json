@@ -1,0 +1,67 @@
+{
+  "REGISTER": {
+    "FIRSTNAME": "Prénom",
+    "LASTNAME": "Nom de famille",
+    "DATEOFBIRTH": "Date de naissance",
+    "USERNAME": "Nom d'utilisateur",
+    "EMAIL": "E-mail",
+    "PASSWORD": "Mot de passe",
+    "REG": "S'inscrire",
+    "InfoFirstName": "Veuillez fournir un prénom, s'il vous plaît",
+    "InfoLastName": "Veuillez fournir un nom de famille, s'il vous plaît",
+    "InfoDateOfBirth": "Veuillez fournir une date de naissance, s'il vous plaît",
+    "InfoUsername": "Veuillez fournir le nom d'utilisateur, s'il vous plaît",
+    "InfoEmail": "Veuillez fournir un e-mail, s'il vous plaît",
+    "InfoPassword": "Veuillez fournir le mot de passe, s'il vous plaît"
+  },
+  "LOGIN": {
+    "USERNAME": "Nom d'utilisateur",
+    "PASSWORD": "Mot de passe",
+    "InfoUsername": "Veuillez fournir le nom d'utilisateur, s'il vous plaît",
+    "InfoPassword": "Veuillez fournir le mot de passe, s'il vous plaît",
+    "LOG": "Connexion"
+  },
+  "Album": {
+    "Header": "Tous les albums",
+    "Paragraph": "Bienvenue dans l'album",
+    "Add": "Ajouter un nouvel album",
+    "Dashboard": "Tableau de bord utilisateur",
+    "Info": "Information",
+    "Out": "Se déconnecter",
+    "EN": "Anglais",
+    "PL": "Polonais",
+    "FR": "Français",
+    "HT": "Haïtien",
+    "Name": "Nom de l'album",
+    "InfoName": "Veuillez fournir un nom d'album, s'il vous plaît",
+    "Address": "Adresse de l'album",
+    "InfoAddress": "Veuillez fournir l'adresse de l'album, s'il vous plaît",
+    "Create": "CRÉER",
+    "Update": "METTRE À JOUR"
+  },
+  "Picture": {
+    "Header": "Toutes les images",
+    "Paragraph": "Bienvenue dans l'image",
+    "Add": "Ajouter une nouvelle image",
+    "LinkAlbum": "Album",
+    "Name": "Nom de l'image",
+    "InfoName": "Veuillez fournir le nom de l'image, s'il vous plaît",
+    "Address": "Adresse de l'image",
+    "InfoAddress": "Veuillez fournir une adresse pour votre image, s'il vous plaît",
+    "Create": "CRÉER",
+    "Update": "METTRE À JOUR"
+  },
+  "User": {
+    "Header": "Tous les utilisateurs",
+    "Paragraph": "Bienvenue dans le tableau de bord utilisateur",
+    "LinkAlbum": "Album",
+    "Dashboard": {
+      "NUMBER": "Numéro",
+      "FIRSTNAME": "Prénom",
+      "LASTNAME": "Nom de famille",
+      "DATEOFBIRTH": "Date de naissance",
+      "USERNAME": "Nom d'utilisateur",
+      "EMAIL": "E-mail"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<%-include('header/head')%>
+    <body>
+    <%- include('nav/getAllUserNav') -%>
+
+    <h1><%=translation.User.Header%></h1>
+    <p><%=translation.User.Paragraph%></p>
+        <div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
+            <table class="table table-sm table-dark">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col"><%=translation.User.Dashboard.NUMBER%></th>
+                    <th scope="col"><%=translation.User.Dashboard.FIRSTNAME%></th>
+                    <th scope="col"><%=translation.User.Dashboard.LASTNAME%></th>
+                    <th scope="col"><%=translation.User.Dashboard.DATEOFBIRTH%></th>
+                    <th scope="col"><%=translation.User.Dashboard.USERNAME%></th>
+                    <th scope="col"><%=translation.User.Dashboard.EMAIL%></th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <% user.forEach(users =>  { %> <tr>
+                <th scope="row"><%=users.id%></th>
+                <td><%=users.firstName%></td>
+                <td><%=users.lastName%></td>
+                <td><%=users.dateOfBirth%></td>
+                <td><%=users.username%></td>
+                <td><%=users.email%></td>
+
+               </tr> <% }); %>
+                </tbody>
+
+
+
+
+
+
+            </table>
+
+
+
+        </div>
+
+    </body>
+</html>
+

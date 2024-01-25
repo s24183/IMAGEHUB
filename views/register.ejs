@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<%-include('header/head')%>
+
+<body>
+<%- include('nav/registerNav') %>
+<div>
+
+</div>
+<h1><%= title %></h1>
+<p>Welcome to <%= title %></p>
+<!-- TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com -->
+
+<form  method="post">
+    <div class="form-group">
+        <label for="exampleInputEmail1"><%=translation.REGISTER.FIRSTNAME%></label>
+        <input type="text" class="form-control" id="firstName" name="firstName"  aria-describedby="pictureHelp" placeholder="Enter a firstname ">
+        <small id="emailHelp" class="form-text text-white"><%=translation.REGISTER.InfoFirstName%></small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1"><%=translation.REGISTER.LASTNAME%></label>
+        <input type="text" class="form-control" id="lastName" name="lastName"  aria-describedby="namesHelp" placeholder="Enter a lastName">
+        <small id="emailHelp" class="form-text text-white"><%=translation.REGISTER.InfoLastName%></small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1"><%=translation.REGISTER.DATEOFBIRTH%></label>
+        <input type="date" class="form-control" id="dateOfBirth" name="dateOfBirth"  aria-describedby="pictureHelp" placeholder="Enter a dateofbirth" >
+        <small id="emailHelp" class="form-text text-white"><%=translation.REGISTER.InfoDateOfBirth%></small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1"><%=translation.REGISTER.USERNAME%></label>
+        <input type="text" class="form-control" id="username" name="username"  aria-describedby="namesHelp" placeholder="Enter a username" >
+        <small id="emailHelp" class="form-text text-white"><%=translation.REGISTER.InfoUsername%></small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1"><%=translation.REGISTER.EMAIL%></label>
+        <input type="email" class="form-control" id="email" name="email"  aria-describedby="pictureHelp" placeholder="Enter an email" >
+        <small id="emailHelp" class="form-text text-white"><%=translation.REGISTER.InfoEmail%></small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1"><%=translation.REGISTER.PASSWORD%></label>
+        <input type="password" class="form-control" id="password" name="password"  aria-describedby="namesHelp" placeholder="Password" >
+        <small id="emailHelp" class="form-text text-white"> <%=translation.REGISTER.InfoPassWord%><a class="login" href="/login"> Login</a></small>
+
+    </div>
+
+
+    <button type="submit" name="submit" class="btn btn-primary" onclick="return registerValidation()"><%=translation.REGISTER.REG%></button>
+</form>
+
+</body>

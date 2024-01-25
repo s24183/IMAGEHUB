@@ -1,0 +1,190 @@
+/*
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+*/
+
+li,.login,.register,label,h1,p{
+    color: white !important;
+
+}
+
+.headerparaAlign{
+    text-align: center ;
+}
+.container{
+    margin: 30px;
+}
+
+body{
+    font-family : 'Century Gothic', Colibri, serif;
+    font-size: 13px;
+    margin: 0px;
+    padding: 0px;
+    background:url('https://images.unsplash.com/photo-1581591524425-c7e0978865fc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#into-jumbotron {
+    background: #159957; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+            to bottom,
+            #283041,
+            #0f1420
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+            to bottom,
+            #283041,
+            #0f1420
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@media (max-width: 991.98px) {
+    #into-jumbotron .border-right {
+        border: none !important;
+    }
+}
+
+nav{
+    width : 100%;
+    background-color: #434656;
+}
+nav ul{
+    margin:0px;
+    padding:0px;
+}
+nav li{
+    list-style-type: none;
+}
+
+nav a {
+    display: inline-block;
+    padding: 20px 30px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+nav a:hover{
+    text-decoration: none;
+
+}
+
+
+.table{
+    display: table;
+    margin: 0 auto;
+}
+
+.menu-ind:hover, .presentation{
+    border-top: 5px solid #4C84;
+    background-color: rgb(61,100,130);
+}
+
+
+
+.menu-exp:hover, .roadmap{
+
+    border-top: 5px solid #f1dc4f;
+    background-color: rgb(56,100,130);
+
+}
+
+.menu-hob:hover, .skills{
+
+    border-top: 5px solid #0070BB;
+    background-color: rgb(000,112,130);
+}
+.menu-con:hover, .recommandation{
+
+    border-top: 5px solid #e44d26;
+    background-color: rgb(65,100,10);
+}
+
+
+.return,.upToDate,.create,.delete{
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 25px 5px;
+    border : 1px solid black;
+    background-color: #2d2f31;
+    color: white;
+    float: right;
+}
+.return:hover,.upToDate:hover,.create:hover,.delete:hover{
+    background-color: #b7e3ea;
+}
+
+.icolinkdelete, .icolinkupdate,.icolinkadd{
+    float : right;
+    font-size : 15px;
+    margin: 3px 5px;
+}
+.icolinkdelete{
+    color : red;
+}
+.icolinkupdate{
+    color : yellow;
+}
+.icolinkadd{
+    color : lightgreen;
+}
+.flag{
+    width : 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Center items horizontally */
+    list-style-type: none; /* Remove default list styles */
+    padding: 0;
+}
+
+.flag li {
+    margin: 0 10px; /* Adjust margin between list items as needed */
+}
+.flag li:hover {
+    background-color: #c5bdbd;
+    border-right: 5px solid #a16f6f;
+
+}
+
+.logout,.dropdown{
+    padding: 20px 30px;
+    text-transform:uppercase;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#foot{
+    bottom: 0;
+    margin: 15px 0;
+    position: static;
+    width:100%;
+}
+.wrapper{
+    text-align:center;
+}
+#flags {
+    width: 100%;
+}
+#flags li {
+    width: 100%;
+}
+#flags li a {
+    font-size: 12px;
+}
+
+svg{
+    margin: 0 auto;
+    width:63%;
+    height:auto;
+}
