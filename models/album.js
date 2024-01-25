@@ -31,9 +31,7 @@ const album = pgdb.define('album', {
 
 });
 
-/*
-album.sync({alter : true});
-*/
+
 
 album.hasMany(picture, {foreignKey : "albumId"});
 picture.belongsTo(album, {foreignKey : "albumId"});

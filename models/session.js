@@ -20,9 +20,6 @@ const session = pgdb.define("session", {
 },{
     tableName : "session"
 });
-/*
-session.sync({alter: true});
-*/
 function extendDefaultFields(defaults, session) {
     return {
         data: defaults.data,

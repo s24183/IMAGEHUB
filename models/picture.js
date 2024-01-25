@@ -38,7 +38,6 @@ const picture = pgdb.define('picture', {
             tableName:"picture"
 
 });
-/*picture.sync({alter: true
-});*/
+
 
 module.exports = picture;

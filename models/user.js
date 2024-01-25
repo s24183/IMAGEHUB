@@ -48,9 +48,7 @@ let users = pgdb.define('users', {
     tableName: "users"
 
 })
-/*
-users.sync({alter : true})
-*/
+
 users.hasMany(picture, {foreignKey : "userId"});
 picture.belongsTo(users, {foreignKey : "userId"});
 users.hasMany(album, {foreignKey : "userId"});

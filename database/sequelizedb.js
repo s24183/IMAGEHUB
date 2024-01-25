@@ -16,9 +16,6 @@ const pgdb = new Sequelize('photography', 'postgres', 'Joepg', {
 
 
 
-/*
-const pgdb = new Sequelize('sqlite::memory')
-*/
 
 
 module.exports = pgdb;

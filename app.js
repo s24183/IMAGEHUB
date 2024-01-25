@@ -9,6 +9,8 @@ var pgSession = require('connect-session-sequelize')(session.Store);
 const extendDefaultFields = require('./models/session').extendDefaultFields;
 const http = require('http');
 var i18n = require("i18n-express");
+require('dotenv').config();
+
 
 
 
@@ -26,12 +28,11 @@ var sessionStore = new pgSession({
   db : pgdb,
   tableName : "session",
   extendDefaultFields : extendDefaultFields,
-  //checkExpirationInterval: 15 * 60 * 1000,
   expiration:  24 * 60 * 60 * 1000
 });
 
 app.use(session({
-  secret : "fdsf324dssfd",
+  secret : process.env.SECRET,
   resave : false,
   store: sessionStore
 }));
@@ -58,7 +59,6 @@ app.use(i18n({
  app.use('/', indexRouter);
 app.use('/album', albumRouter)
 app.use('/', usersRouter);
-// app.use('/allPicture', picturesRouter)
 
 
 

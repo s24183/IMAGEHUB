@@ -1,6 +1,5 @@
 const album = require('../models/album');
 const picture = require('../models/picture')
-const users= require('../models/user');
 
 var express = require('express');
 var router = express.Router();
@@ -12,8 +11,7 @@ const admin = require('../authentification/authenticator').admin;
 router.get('/', authorize,function(req, res,next) {
     album.findAll({
         order : [['id', 'ASC']]
-    }) //la mw te jwenn yon problem paske te pran kek atribute specific epi m pat select id ladann ki te vinn fe chack tanm mete id an nan link lan li pat janm ka mache kounya li bon
-        //!!!  sonje le m ap itilize yon id pou w fe tout select la
+    })
         .then(result => {
 
             if(!album){
@@ -28,7 +26,6 @@ router.get('/', authorize,function(req, res,next) {
 
 router.get('/:albumName/getAllPicture/', authorize,function (req, res,next){
     const AlbumName = req.params.albumName;
-    //fok mw eseye avek non paske l ap pi bon pou mw si m fe avek non an l ap pemet user a antre non album nan ki ap pi bon olye de antre non id an
     album.findAll({
         where : {
             albumName :  AlbumName
@@ -69,7 +66,7 @@ router.post('/:albumName/addNewPic/', admin,  function(req, res,next){
           Address : newPictureAddress,
           PictureName : newPictureName,
           albumId :   Album.id,
-           userId : req.user.id, // I just used the userId from the database that would be the id for the user session
+           userId : req.user.id,
           include :album
 
       })
@@ -112,7 +109,6 @@ router.post('/createNewAlbum', admin,function(req, res,next) {
         })
         .catch(err =>  console.log(err))
 })
-    //Pou update lan mw ap montre foto a nan fom lan epi input lan ap jis adress lan
 router.get('/updateAlbum/:id', admin, function(req, res, next){
     album.findByPk(req.params.id)
         .then(result => {
@@ -149,7 +145,6 @@ router.post('/updateAlbum/:id',  admin,function(req, res,next) {
         })
         .catch(err =>  console.log(err))
 })
-//Mw jwen yon bel ide olye mw itilize plizye ejs ki pral pemet mw al nan fe yon ekip kod mw jis itilize  function an nan ejs epi li mache korekteman
 
 router.get('/:albumName/updatePicture/:id',  admin,function(req, res,next){
     picture.findByPk(req.params.id)
@@ -198,9 +193,7 @@ router.post('/:albumName/updatePicture/:id', admin, function(req, res, next) {
         });
 });
 
-/*
-M anvi tchke kantite foto ki genyen nan yon album e montre kantite a
-*/
+
 router.get('/:albumName/getAllPicture/:id', admin, function(req, res,next){
 picture.destroy({
         where : {
