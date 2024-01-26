@@ -1,5 +1,7 @@
 const Sequelize = require('sequelize');
-const pgdb = new Sequelize('photography', 'postgres', 'Joepg', {
+require('dotenv').config();
+
+const pgdb = new Sequelize(process.env.DATABASE_NAME,process.env.DATABASE_USED , process.env.DATABASE_PASSWORD, {
     host: 'localhost',
     dialect: 'postgres',
     define:{
