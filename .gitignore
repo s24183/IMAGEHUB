@@ -41,6 +41,8 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+mdb5-free-standard/
+
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
@@ -130,5 +132,4 @@ dist
 .pnp.*
 
 *.idea
-mdb5-free-standard/
 
