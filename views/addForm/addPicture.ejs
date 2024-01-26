@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<%-include('../header/head')%>
+<body>
+<a class="create" href="/album/">
+    <i class="bi bi-arrow-return-left"></i>
+</a>
+<h1><%=  translation.Picture.Add %></h1>
+<form method="post">
+
+    <div class="form-group">
+        <label for="exampleInputEmail1"><%=translation.Picture.Name%></label>
+        <input type="text" class="form-control" id="PictureName"  name="PictureName" aria-describedby="pictureHelp" placeholder="Enter picture Name">
+        <small id="emailHelp" class="form-text text-white"><%=translation.Picture.InfoName%></small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1"><%=translation.Album.Address%></label>
+        <input type="text" class="form-control" id="Address"  name="Address" aria-describedby="pictureHelp" placeholder="Enter a picture address">
+        <small id="emailHelp" class="form-text text-white"><%=translation.Picture.InfoAddress%></small>
+    </div>
+
+    <button type="submit" class="btn btn-primary" onclick=" return addUpdatePictureValidation()"><%=translation.Picture.Create%></button>
+</form>
+</body>
+</html>
+

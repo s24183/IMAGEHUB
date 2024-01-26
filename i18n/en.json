@@ -1,0 +1,68 @@
+{
+  "REGISTER" : {
+    "FIRSTNAME" : "FirstName",
+    "LASTNAME" : "LastName",
+    "DATEOFBIRTH" : "DateOfBirth",
+    "USERNAME" : "Username",
+    "EMAIL" : "Email",
+    "PASSWORD" : "Password",
+    "REG" : "Register",
+    "InfoFirstName" : "Please provide an firstName, please",
+    "InfoLastName" : "Please provide the lastName, please",
+    "InfoDateOfBirth" : "Please provide a dateofbirth, please",
+    "InfoUsername" : "Please provide the username, please",
+    "InfoEmail" : "Please provide an email, please",
+    "InfoPassword" : "Please provide the password"
+  },
+
+  "LOGIN" : {
+    "USERNAME" : "Username",
+    "PASSWORD" : "Password",
+    "InfoUsername" : "Please provide the username, please",
+    "InfoPassword" : "Please provide the password",
+    "LOG" : "Login"
+  },
+  "Album": {
+    "Header": "All Album",
+    "Paragraph": "Welcome to Album",
+    "Add": "Add New Album",
+    "Dashboard": " User Dashboard",
+    "Info": " Information",
+    "Out": "LOG OUT",
+    "EN": "English",
+    "PL": "Polish",
+    "FR": "French",
+    "HT": "Haitian",
+    "Name" : "AlbumName",
+    "InfoName" : "Please provide an AlbumAddressPicture, please",
+    "Address" : "AlbumAddressPicture",
+    "InfoAddress" : "Please provide the albumName, please",
+    "Create" : "CREATE",
+    "Update" : "UPDATE"
+  },
+  "Picture" : {
+    "Header": "All Picture",
+    "Paragraph": "Welcome to Picture",
+    "Add" : "Add New Picture",
+    "LinkAlbum" : "Album",
+    "Name" : "PictureName",
+    "InfoName" : "Please provide the pictureName, please",
+    "Address" : "PictureAddress",
+    "InfoAddress" : "Please provide a copy address for your image, please",
+    "Create" : "CREATE",
+    "Update" : "UPDATE"
+  },
+  "User" : {
+    "Header": "All User",
+    "Paragraph": "Welcome to User Dashboard",
+    "LinkAlbum" : "Album",
+    "Dashboard" : {
+      "NUMBER" : "Number",
+      "FIRSTNAME" : "FirstName",
+      "LASTNAME" : "LastName",
+      "DATEOFBIRTH" : "DateOfBirth",
+      "USERNAME" : "UserName",
+      "EMAIL" : "Email"
+    }
+  }
+}

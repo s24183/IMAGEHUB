@@ -42,8 +42,11 @@ build/Release
 node_modules/
 jspm_packages/
 mdb5-free-standard/
+<<<<<<< HEAD
 .idea/
 
+=======
+>>>>>>> second
 
 
 # Snowpack dependency directory (https://snowpack.dev/)
@@ -133,4 +136,8 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+<<<<<<< HEAD
+=======
+*.idea
+>>>>>>> second
 

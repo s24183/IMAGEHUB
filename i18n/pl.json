@@ -1,0 +1,67 @@
+{
+  "REGISTER": {
+    "FIRSTNAME": "Imię",
+    "LASTNAME": "Nazwisko",
+    "DATEOFBIRTH": "Data urodzenia",
+    "USERNAME": "Nazwa użytkownika",
+    "EMAIL": "E-mail",
+    "PASSWORD": "Hasło",
+    "REG": "Zarejestruj",
+    "InfoFirstName": "Proszę podać imię",
+    "InfoLastName": "Proszę podać nazwisko",
+    "InfoDateOfBirth": "Proszę podać datę urodzenia",
+    "InfoUsername": "Proszę podać nazwę użytkownika",
+    "InfoEmail": "Proszę podać adres e-mail",
+    "InfoPassword": "Proszę podać hasło"
+  },
+  "LOGIN": {
+    "USERNAME": "Nazwa użytkownika",
+    "PASSWORD": "Hasło",
+    "InfoUsername": "Proszę podać nazwę użytkownika",
+    "InfoPassword": "Proszę podać hasło",
+    "LOG": "Zaloguj się"
+  },
+  "Album": {
+    "Header": "Wszystkie albumy",
+    "Paragraph": "Witaj w albumie",
+    "Add": "Dodaj nowy album",
+    "Dashboard": "Panel użytkownika",
+    "Info": "Informacje",
+    "Out": "Wyloguj się",
+    "EN": "Angielski",
+    "PL": "Polski",
+    "FR": "Francuski",
+    "HT": "Haitański",
+    "Name": "Nazwa albumu",
+    "InfoName": "Proszę podać nazwę albumu",
+    "Address": "Adres albumu",
+    "InfoAddress": "Proszę podać adres albumu",
+    "Create": "STWÓRZ",
+    "Update": "AKTUALIZUJ"
+  },
+  "Picture": {
+    "Header": "Wszystkie zdjęcia",
+    "Paragraph": "Witaj w zdjęciu",
+    "Add": "Dodaj nowe zdjęcie",
+    "LinkAlbum": "Album",
+    "Name": "Nazwa zdjęcia",
+    "InfoName": "Proszę podać nazwę zdjęcia",
+    "Address": "Adres zdjęcia",
+    "InfoAddress": "Proszę podać adres dla zdjęcia",
+    "Create": "STWÓRZ",
+    "Update": "AKTUALIZUJ"
+  },
+  "User": {
+    "Header": "Wszyscy użytkownicy",
+    "Paragraph": "Witaj w panelu użytkownika",
+    "LinkAlbum": "Album",
+    "Dashboard": {
+      "NUMBER": "Numer",
+      "FIRSTNAME": "Imię",
+      "LASTNAME": "Nazwisko",
+      "DATEOFBIRTH": "Data urodzenia",
+      "USERNAME": "Nazwa użytkownika",
+      "EMAIL": "E-mail"
+    }
+  }
+}

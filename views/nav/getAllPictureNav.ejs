@@ -1,0 +1,26 @@
+
+<nav>
+    <ul class="flag">
+        <li>
+            <a  href="/album/">
+                <%=translation.Picture.LinkAlbum%>
+            </a>
+
+        </li>
+        <li>
+        <% album.forEach(alb => { %>   <%
+        if(req.user.isAdmin===true) { %>
+           <a  href="/album/<%=alb.albumName%>/addNewPic/">     <%=translation.Picture.Add%></a>
+            <% } %>
+        <% }); %>
+        </li>
+        <%-include('./list-lang')%>
+
+
+
+    </ul>
+
+
+</nav>
+
+

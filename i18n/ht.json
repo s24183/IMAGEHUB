@@ -1,0 +1,67 @@
+{
+  "REGISTER": {
+    "FIRSTNAME": "Premye non",
+    "LASTNAME": "Dènye non",
+    "DATEOFBIRTH": "Dat nesans",
+    "USERNAME": "Non itilizatè",
+    "EMAIL": "Imèl",
+    "PASSWORD": "Modpas",
+    "REG": "Enskri",
+    "InfoFirstName": "Tanpri bay yon premye non, tanpri",
+    "InfoLastName": "Tanpri bay yon dènye non, tanpri",
+    "InfoDateOfBirth": "Tanpri bay yon dat nesans, tanpri",
+    "InfoUsername": "Tanpri bay non itilizatè a, tanpri",
+    "InfoEmail": "Tanpri bay yon imèl, tanpri",
+    "InfoPassword": "Tanpri bay modpas la, tanpri"
+  },
+  "LOGIN": {
+    "USERNAME": "Non itilizatè",
+    "PASSWORD": "Modpas",
+    "InfoUsername": "Tanpri bay non itilizatè a, tanpri",
+    "InfoPassword": "Tanpri bay modpas la, tanpri",
+    "LOG": "Konekte"
+  },
+  "Album": {
+    "Header": "Tout Album",
+    "Paragraph": "Byenveni nan Album",
+    "Add": "Ajoute Nouvo Album",
+    "Dashboard": " Tablo itilizatè",
+    "Info": " Enfòmasyon",
+    "Out": "Dekonekte",
+    "EN": "Angle",
+    "PL": "Polonè",
+    "FR": "Franse",
+    "HT": "Ayisyen",
+    "Name": "Non Album",
+    "InfoName": "Tanpri bay yon non album, tanpri",
+    "Address": "Adrès Album",
+    "InfoAddress": "Tanpri bay adrès album la, tanpri",
+    "Create": "KREYE",
+    "Update": "AKTALIZE"
+  },
+  "Picture": {
+    "Header": "Tout Foto",
+    "Paragraph": "Byenveni nan Foto",
+    "Add": "Ajoute Nouvo Foto",
+    "LinkAlbum": "Album",
+    "Name": "Non Foto",
+    "InfoName": "Tanpri bay non foto a, tanpri",
+    "Address": "Adrès Foto",
+    "InfoAddress": "Tanpri bay yon adrès pou imaj la, tanpri",
+    "Create": "KREYE",
+    "Update": "AKTALIZE"
+  },
+  "User": {
+    "Header": "Tout Itilizatè",
+    "Paragraph": "Byenveni nan Tablo itilizatè a",
+    "LinkAlbum": "Album",
+    "Dashboard": {
+      "NUMBER": "Nimewo",
+      "FIRSTNAME": "Premye non",
+      "LASTNAME": "Dènye non",
+      "DATEOFBIRTH": "Dat nesans",
+      "USERNAME": "Non itilizatè",
+      "EMAIL": "Imèl"
+    }
+  }
+}

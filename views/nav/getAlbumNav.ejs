@@ -1,0 +1,33 @@
+<nav>
+    <ul class="flag">
+        <% if(req.user.isAdmin===true) { %>
+        <li>
+            <a  href="/album/createNewAlbum/">
+                <%=translation.Album.Add%>
+            </a>
+        </li>
+        <li>
+            <a  href="/users/allUser/">
+                <%=translation.Album.Dashboard%>
+            </a>
+        </li>
+        <%}%>
+
+        <li>
+            <a href="/userProfile/<%=req.user.id%>">
+                <%=translation.Album.Info%>
+            </a>
+        </li>
+        <%- include('./list-lang') %>
+
+        <li>
+            <form  action="/logout" method="post">
+                <button class="logout"  type="submit" style="color : red"><%=translation.Album.Out%></button>
+            </form>
+        </li>
+
+
+    </ul>
+
+
+</nav>
