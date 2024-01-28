@@ -1,5 +1,6 @@
 const Sequelize = require('sequelize');
-require('dotenv').config();
+require('dotenv').config({path:'C:\\Users\\Joe\\OneDrive\\Documents\\PJTAK\\ALLPROJECTFORGIT\\PictureSaver\\.env'})
+
 
 const pgdb = new Sequelize(process.env.DATABASE_NAME,process.env.DATABASE_USED , process.env.DATABASE_PASSWORD, {
     host: 'localhost',

@@ -9,7 +9,7 @@ var pgSession = require('connect-session-sequelize')(session.Store);
 const extendDefaultFields = require('./models/session').extendDefaultFields;
 const http = require('http');
 var i18n = require("i18n-express");
-require('dotenv').config();
+require('dotenv').config({path:'C:\\Users\\Joe\\OneDrive\\Documents\\PJTAK\\ALLPROJECTFORGIT\\PictureSaver\\.env'})
 
 
 
@@ -34,7 +34,9 @@ var sessionStore = new pgSession({
 app.use(session({
   secret : process.env.SECRET,
   resave : false,
-  store: sessionStore
+    saveUninitialized:true,
+
+    store: sessionStore
 }));
 
 app.use(passport.initialize());
@@ -54,6 +56,8 @@ app.use(i18n({
   siteLangs: ['en', 'pl', 'fr', 'ht'],
   textsVarName: 'translation'
 }));
+
+
 
 
  app.use('/', indexRouter);
